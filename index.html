@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muffins | Freshly Baked Joy</title>
+  <link rel="stylesheet" href="design.css">
+  <link rel="icon" type="image/png" href="icon.jpeg">
+
+</head>
+<body>
+
+ 
+  <header class="hero">
+    <div class="slideshow">
+      <img src="5.jpg" class="slide active" alt="Blueberry Muffins">
+      <img src="8.jpg" class="slide" alt="Chocolate Muffins">
+      <img src="6.jpg" class="slide" alt="Banana Muffins">
+    </div>
+    <div class="overlay"></div>
+
+    <nav class="navbar">
+      <h1 class="logo">HomeCooked<span>Delights</span></h1>
+      <ul>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#wrap">Wrapping</a></li>
+        <li><a href="#location">Location</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content glass">
+      <h2>Simple. Soft. Sweet.</h2>
+      <p>Fresh muffins, made from the heart.</p>
+      <a href="#products" class="btn">Explore</a>
+    </div>
+  </header>
+
+  <section id="products" class="section">
+    <h2 class="section-title">Our Muffin Selection</h2>
+    <div class="product-container">
+      <div class="product card fade-in">
+        <img src="bl1.jpg" alt="Blueberry Muffin">
+        <h3>Blueberry Bliss</h3>
+        <p>Moist muffins bursting with real blueberries.</p>
+        <p>₱300.00 per box</p>
+      </div>
+      <div class="product card fade-in">
+        <img src="ch.jpg" alt="Chocolate Muffin">
+        <h3>Choco Dream</h3>
+        <p>Rich chocolate muffins for every craving.</p>
+        <p>₱250.00 per box</p>
+      </div>
+      <div class="product card fade-in">
+        <img src="bn.jpg" alt="Banana Muffin">
+        <h3>Banana Classic</h3>
+        <p>Sweet and fluffy banana perfection.</p>
+        <p>₱200.00 per box</p>
+      </div>
+    </div>
+  </section>
+
+ <section id="about" class="about-section fade-in">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        Our muffin journey began with a simple passion in the heart of Bulacan, where my aunt first started baking her delicious, homemade muffins. 
+        What began as a small hobby quickly grew into a thriving business, fueled by love, creativity, and the joy of sharing freshly baked goodness. 
+        She would post her creations online, allowing customers to see the products and place their orders by the number of boxes. 
+        Each muffin is baked with care using her own recipes, ensuring every bite tastes like home. 
+        Today, that same tradition continues here — bringing the comforting flavor of our family’s kitchen to yours.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="8.jpg" alt="Fresh Muffins" />
+    </div>
+  </div>
+</section>
+
+
+<section id="wrap" class="section">
+  <h2 class="section-title">Wrapping Options</h2>
+
+  <div class="wrap-container">
+    <div class="wrap card fade-in" data-wrap="Seasonal Wrap">
+      <img src="w1.jpg" alt="Seasonal Wrap">
+      <h3>Seasonal Wrap</h3>
+    </div>
+
+    <div class="wrap card fade-in" data-wrap="Gift Wrap">
+      <img src="w2.jpg" alt="Gift Wrap">
+      <h3>Gift Wrap</h3>
+    </div>
+
+    <div class="wrap card fade-in" data-wrap="Normal Wrap">
+      <img src="w3.jpg" alt="Normal Wrap">
+      <h3>Normal Wrap</h3>
+    </div>
+  </div>
+
+  <div id="cart-section" class="cart-section fade-in">
+    <h3>🛒 Add to Cart</h3>
+    <form id="cart-form">
+      <label for="muffin-type">Choose Muffin:</label>
+      <select id="muffin-type" required>
+        <option value="">Select a muffin</option>
+        <option value="Blueberry Bliss">Blueberry Bliss</option>
+        <option value="Choco Dream">Choco Dream</option>
+        <option value="Banana Classic">Banana Classic</option>
+      </select>
+
+      <label for="quantity">Quantity (boxes):</label>
+      <input type="number" id="quantity" min="1" value="1" required>
+
+      <label for="wrap-type">Selected Wrap:</label>
+      <input type="text" id="wrap-type" readonly placeholder="Select a wrap above">
+
+      <button type="submit" class="btn">Add to Cart</button>
+    </form>
+    <p id="cart-message" class="cart-message"></p>
+  </div>
+</section>
+
+
+
+
+
+    <section id="location" class="map-section fade-in">
+  <h2>Find Us</h2>
+  <div class="map-container">
+    <img src="map.png" alt="Our Location" style="width:100%; border-radius:15px;">
+  </div>
+</section>
+
+
+
+  <footer>
+  <div class="footer-content">
+    <h3 class="footer-logo">HomeCooked<span>Delights</span></h3>
+    <ul class="footer-info">
+      <li><i class="fas fa-phone"></i>📞 +63 915 310 9722</li>
+      <li><i class="fas fa-envelope"></i>📧 homecookeddelights@gmail.com</li>
+      <li><i class="fas fa-home"></i>🏠 780 La Forteza Subd. Camarin Caloocan City, Philippines</li>
+    </ul>
+    <p>&copy; 2025 Muffins | Baked with Love</p>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
