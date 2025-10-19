@@ -115,3 +115,19 @@ if (wraps && cartSection) {
     }
   });
 }
+// ===== Responsive Navbar Toggle =====
+const menuToggle = document.getElementById('menu-toggle');
+const navLinksContainer = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  navLinksContainer.classList.toggle('show');
+});
+
+// Close menu when a link is clicked
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    menuToggle.classList.remove('active');
+    navLinksContainer.classList.remove('show');
+  });
+});
